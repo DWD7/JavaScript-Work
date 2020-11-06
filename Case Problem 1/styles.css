@@ -1,0 +1,38 @@
+.bordered {
+    position: sticky;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: auto;
+    font-size: large;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.center {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.right {
+    position: absolute;
+    right: 0px;
+    padding-left: 15px;
+    transform: scaleX(-1);
+}
+.left {
+    position: absolute;
+    left: 0px;
+    padding-left: 15px;
+}
+.textButton{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    color: lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
