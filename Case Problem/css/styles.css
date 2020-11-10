@@ -1,6 +1,5 @@
 .bordered {
     position: sticky;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50vw;
@@ -10,21 +9,35 @@
     border: 1px solid #ffffff;
     border-radius: 5px;
 }
+.circle{
+    position: absolute;
+    margin-top: 5px;
+    width: 12.5vw;
+    height: 12.5vw;
+    padding: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
 .center {
     position: absolute;
-    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom {
+    position: absolute;
+    bottom: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .right {
     position: absolute;
-    right: 0px;
+    right: 0%;
     padding-left: 15px;
     transform: scaleX(-1);
 }
 .left {
     position: absolute;
-    left: 0px;
+    left: 0%;
     padding-left: 15px;
 }
 .textButton{

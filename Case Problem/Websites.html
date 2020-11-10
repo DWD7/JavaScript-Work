@@ -1,0 +1,91 @@
+<!doctype html>
+<!--
+    Name: Dustin Dell
+    Date: 11/3/2020
+-->
+<html lang="en" style="background: black; color: white;">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/modernizr.custom.05819.js"></script>
+    <meta charset="utf-8">
+    <title>Websites</title>
+    <script src="js/functions.js"></script>
+</head>
+
+<body>
+    <div id="sitesOpened" class="left">Times a site was opened: 0</div>
+    <header style="text-align: center;">
+        <h1>Websites</h1>
+    </header>
+
+    <nav style="text-align: center;">
+        <p>
+            <a href="index.html" style="color:white">Home</a> &#124;
+            <a href="Anime.html" style="color:white">Anime List</a> &#124;
+            <a href="Games.html" style="color:white">Games</a> &#124;
+            Websites &#124;
+            <a href="About.html" style="color:white">About</a>
+        </p>
+    </nav>
+
+    <main>
+        <div class="bordered" style="text-align: center;">
+            <p>
+                These sites are those that have subscriptions, the first two are anime only.<br>
+                The others are assorted shows that include anime.
+            </p>
+            <h2>
+                <img src="images/crunchyroll-icon.png" alt="Crunchyroll Icon" style="width: 1.5vw; height: auto;">
+                <a style="color: lightblue;" onclick="addOne('sitesOpenedNum');" onauxclick="addOne('sitesOpenedNum');" href="https://www.crunchyroll.com/" target="_blank">Crunchyroll</a>
+                <img src="images/crunchyroll-icon.png" alt="Crunchyroll Icon" style="width: 1.5vw; height: auto;">
+                <br>
+                <img src="images/funimation_icon.webp" alt="Funimation Icon" style="width: 1.5vw; height: auto;">
+                <a style="color: lightblue;" onclick="addOne('sitesOpenedNum');" onauxclick="addOne('sitesOpenedNum');" href="https://www.funimation.com/" target="_blank">Funimation</a>
+                <img src="images/funimation_icon.webp" alt="Funimation Icon" style="width: 1.5vw; height: auto;">
+                <br>
+                <img src="images/netflix_icon.webp" alt="Netflix Icon" style="width: 1.5vw; height: auto;">
+                <a style="color: lightblue;" onclick="addOne('sitesOpenedNum');" onauxclick="addOne('sitesOpenedNum');" href="https://www.netflix.com/" target="_blank">Netflix</a>
+                <img src="images/netflix_icon.webp" alt="Netflix Icon" style="width: 1.5vw; height: auto;">
+                <br>
+                <img src="images/hulu-icon.png" alt="Hulu Icon" style="width: 1.5vw; height: auto;">
+                <a style="color: lightblue;" onclick="addOne('sitesOpenedNum');" onauxclick="addOne('sitesOpenedNum');" href="https://www.hulu.com" target="_blank">Hulu</a>
+                <img src="images/hulu-icon.png" alt="Hulu Icon" style="width: 1.5vw; height: auto;">
+            </h2>
+            <p>
+                These sites are those that do not have subscriptions. Click <button class="textButton" onclick="checkHide18();">here</button> to view/hide them.
+            </p>
+            <div id="hid" style="display: none;">
+                Only use these site if you don't mind... special ads, or if you have an adblocker.
+                <h2>
+                    <img src="images/9Anime_icon.png" alt="9 Anime Icon" style="width: 1.5vw; height: auto;">
+                    <a style="color: lightblue;" onclick="addOne('sitesOpenedNum');" onauxclick="addOne('sitesOpenedNum');" href="https://www12.9anime.ru/" target="_blank">9 Anime</a>
+                    <img src="images/9Anime_icon.png" alt="9 Anime Icon" style="width: 1.5vw; height: auto;">
+                    <br>
+                    <img src="images/GoGoAnime_icon.png" alt="9 Anime Icon" style="width: 1.5vw; height: auto;">
+                    <a style="color: lightblue;" onclick="addOne('sitesOpenedNum');" onauxclick="addOne('sitesOpenedNum');" href="https://gogoanime.so/" target="_blank">GoGo Anime</a>
+                    <img src="images/GoGoAnime_icon.png" alt="9 Anime Icon" style="width: 1.5vw; height: auto;">
+                </h2>
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center;">
+        Image Sources:
+        <a style="color: lightblue;" target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Crunchyroll_Logo.png/857px-Crunchyroll_Logo.png">Crunchyroll Logo</a>,
+        <a style="color: lightblue;" target="_blank" href="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1501582919/pxfx5s9lskzbv6rn6jtx.png">Funimation Logo</a>,
+        <a style="color: lightblue;" target="_blank" href="https://cdn.iconscout.com/icon/free/png-512/netflix-6-722723.png">Netflix Logo</a>,
+        <a style="color: lightblue;" target="_blank" href="https://image.pngaaa.com/593/323593-small.png">Hulu Logo</a>
+        <div id="hid2" style="display: none;">
+            <a style="color: lightblue;" target="_blank" href="https://image.winudf.com/v2/image1/Y29tLmFxdWF4b2Z0LmFuaW1lOV9pY29uXzE1NDE4MTgyMzNfMDcy/icon.png?w=170&fakeurl=1">9anime Logo</a>,
+            <a style="color: lightblue;" target="_blank" href="https://gogoanime.link/addons/logo.png">GoGo Anime Logo</a>
+        </div>
+    </footer>
+
+    <script>
+        var sitesOpenedNum = 0;
+        function addOne() {
+            document.getElementById("sitesOpened").innerHTML = "Times a site was opened: " + ++sitesOpenedNum;
+        }
+    </script>
+</body>
+</html>
